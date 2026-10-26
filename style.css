@@ -134,6 +134,29 @@ ul, ol {
   border-radius: 4px;
 }
 
+/* Accessible Skip Link */
+.skip-link {
+  position: absolute;
+  top: -120px;
+  left: 1.5rem;
+  background-color: var(--violet-600);
+  color: #ffffff;
+  padding: 0.625rem 1.25rem;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: 0.875rem;
+  z-index: 9999;
+  box-shadow: var(--shadow-lg);
+  transition: top var(--transition-fast);
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 1rem;
+  outline: 3px solid #ffffff;
+  outline-offset: 2px;
+}
+
 /* --- 3. Layout Utilities --- */
 .container {
   width: 100%;
@@ -157,6 +180,7 @@ ul, ol {
 .gradient-text {
   background: linear-gradient(135deg, var(--violet-600) 0%, #4338ca 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
@@ -2760,6 +2784,62 @@ ul, ol {
 
   .price-number {
     font-size: 2.5rem;
+  }
+
+  .chrome-search {
+    min-width: 0;
+  }
+
+  .chrome-search span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+  }
+}
+
+/* Extra-small screens (<= 360px down to 320px) */
+@media (max-width: 360px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero-title {
+    font-size: 1.625rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .showcase-tab {
+    font-size: 0.6875rem;
+    padding: 0.35rem 0.45rem;
+  }
+
+  .pricing-card {
+    padding: 1.25rem;
+  }
+
+  .feature-card {
+    padding: 1.25rem;
+  }
+
+  .step-card {
+    padding: 1.5rem 1.125rem;
+  }
+
+  .cta-banner {
+    padding: 2.5rem 1rem;
+  }
+
+  .cta-headline {
+    font-size: 1.625rem;
+  }
+
+  .demo-dialog-card {
+    padding: 1.75rem 1.125rem;
   }
 }
 
