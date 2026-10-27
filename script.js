@@ -15,7 +15,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
-  // --- Helpers & Preferences ---
+  // --- Helpers & Preferences ---//
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const header = document.getElementById('navbar');
   const getHeaderHeight = () => (header ? header.offsetHeight : 72);
@@ -349,33 +349,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Close modal on Escape key and trap Tab key focus
+  // Close modal on Escape key
   document.addEventListener('keydown', (event) => {
-    if (!demoModal || demoModal.hidden) return;
-
-    if (event.key === 'Escape') {
+    if (event.key === 'Escape' && demoModal && !demoModal.hidden) {
       closeDemoModal();
-      return;
-    }
-
-    if (event.key === 'Tab') {
-      const focusableElements = demoModal.querySelectorAll('button:not([disabled])');
-      if (focusableElements.length === 0) return;
-
-      const firstElement = focusableElements[0];
-      const lastElement = focusableElements[focusableElements.length - 1];
-
-      if (event.shiftKey) {
-        if (document.activeElement === firstElement) {
-          event.preventDefault();
-          lastElement.focus();
-        }
-      } else {
-        if (document.activeElement === lastElement) {
-          event.preventDefault();
-          firstElement.focus();
-        }
-      }
     }
   });
 
