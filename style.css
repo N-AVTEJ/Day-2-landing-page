@@ -27,8 +27,10 @@
   --violet-300: #c4b5fd;
   --violet-400: #a78bfa;
   --violet-500: #8b5cf6;
-  --violet-600: #7c3aed; /* Primary Accent */
-  --violet-700: #6d28d9; /* Primary Hover */
+  --violet-600: #7c3aed;
+  /* Primary Accent */
+  --violet-700: #6d28d9;
+  /* Primary Hover */
   --violet-800: #5b21b6;
   --violet-900: #4c1d95;
 
@@ -78,7 +80,9 @@
 }
 
 /* --- 2. CSS Reset & Base Rules --- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -105,7 +109,8 @@ body.menu-open {
   overflow: hidden;
 }
 
-img, svg {
+img,
+svg {
   display: block;
   max-width: 100%;
 }
@@ -123,7 +128,8 @@ button {
   cursor: pointer;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -595,9 +601,11 @@ ul, ol {
   0% {
     box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.7);
   }
+
   70% {
     box-shadow: 0 0 0 8px rgba(124, 58, 237, 0);
   }
+
   100% {
     box-shadow: 0 0 0 0 rgba(124, 58, 237, 0);
   }
@@ -710,9 +718,17 @@ ul, ol {
   border-radius: 50%;
 }
 
-.chrome-dot.red { background-color: #ef4444; }
-.chrome-dot.yellow { background-color: #f59e0b; }
-.chrome-dot.green { background-color: #10b981; }
+.chrome-dot.red {
+  background-color: #ef4444;
+}
+
+.chrome-dot.yellow {
+  background-color: #f59e0b;
+}
+
+.chrome-dot.green {
+  background-color: #10b981;
+}
 
 .chrome-search {
   display: flex;
@@ -873,9 +889,17 @@ ul, ol {
   border-radius: 50%;
 }
 
-.project-dot.violet { background-color: var(--violet-500); }
-.project-dot.emerald { background-color: var(--emerald-500); }
-.project-dot.amber { background-color: var(--amber-500); }
+.project-dot.violet {
+  background-color: var(--violet-500);
+}
+
+.project-dot.emerald {
+  background-color: var(--emerald-500);
+}
+
+.project-dot.amber {
+  background-color: var(--amber-500);
+}
 
 .sidebar-user {
   margin-top: auto;
@@ -1046,8 +1070,13 @@ ul, ol {
   border-radius: var(--radius-full);
 }
 
-.kpi-fill.emerald { background-color: var(--emerald-500); }
-.kpi-fill.violet { background-color: #6366f1; }
+.kpi-fill.emerald {
+  background-color: var(--emerald-500);
+}
+
+.kpi-fill.violet {
+  background-color: #6366f1;
+}
 
 /* Mockup Kanban */
 .mockup-kanban {
@@ -1123,10 +1152,25 @@ ul, ol {
   border-radius: 4px;
 }
 
-.badge-tag.violet { background-color: var(--violet-100); color: var(--violet-800); }
-.badge-tag.emerald { background-color: var(--emerald-100); color: var(--emerald-700); }
-.badge-tag.amber { background-color: var(--amber-100); color: var(--amber-700); }
-.badge-tag.done-tag { background-color: #e2e8f0; color: var(--text-secondary); }
+.badge-tag.violet {
+  background-color: var(--violet-100);
+  color: var(--violet-800);
+}
+
+.badge-tag.emerald {
+  background-color: var(--emerald-100);
+  color: var(--emerald-700);
+}
+
+.badge-tag.amber {
+  background-color: var(--amber-100);
+  color: var(--amber-700);
+}
+
+.badge-tag.done-tag {
+  background-color: #e2e8f0;
+  color: var(--text-secondary);
+}
 
 .badge-priority {
   font-size: 0.625rem;
@@ -1135,9 +1179,20 @@ ul, ol {
   border-radius: 3px;
 }
 
-.badge-priority.high { background-color: var(--rose-100); color: #be123c; }
-.badge-priority.med { background-color: var(--amber-100); color: var(--amber-700); }
-.badge-priority.done-tag { background-color: #f1f5f9; color: var(--text-muted); }
+.badge-priority.high {
+  background-color: var(--rose-100);
+  color: #be123c;
+}
+
+.badge-priority.med {
+  background-color: var(--amber-100);
+  color: var(--amber-700);
+}
+
+.badge-priority.done-tag {
+  background-color: #f1f5f9;
+  color: var(--text-muted);
+}
 
 .card-task-title {
   font-size: 0.78125rem;
@@ -1702,6 +1757,7 @@ ul, ol {
     opacity: 0.5;
     transform: translateY(4px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1734,10 +1790,21 @@ ul, ol {
   border-radius: 50%;
 }
 
-.col-status-dot.gray { background-color: var(--text-subtle); }
-.col-status-dot.violet { background-color: var(--violet-600); }
-.col-status-dot.emerald { background-color: var(--emerald-500); }
-.col-status-dot.amber { background-color: var(--amber-500); }
+.col-status-dot.gray {
+  background-color: var(--text-subtle);
+}
+
+.col-status-dot.violet {
+  background-color: var(--violet-600);
+}
+
+.col-status-dot.emerald {
+  background-color: var(--emerald-500);
+}
+
+.col-status-dot.amber {
+  background-color: var(--amber-500);
+}
 
 .col-title-text {
   font-size: 0.875rem;
@@ -1880,10 +1947,25 @@ ul, ol {
   border-radius: 3px;
 }
 
-.priority-tag.p1 { background-color: var(--rose-100); color: #be123c; }
-.priority-tag.p2 { background-color: var(--amber-100); color: var(--amber-700); }
-.priority-tag.p3 { background-color: #f1f5f9; color: var(--text-secondary); }
-.priority-tag.done { background-color: var(--emerald-100); color: var(--emerald-700); }
+.priority-tag.p1 {
+  background-color: var(--rose-100);
+  color: #be123c;
+}
+
+.priority-tag.p2 {
+  background-color: var(--amber-100);
+  color: var(--amber-700);
+}
+
+.priority-tag.p3 {
+  background-color: #f1f5f9;
+  color: var(--text-secondary);
+}
+
+.priority-tag.done {
+  background-color: var(--emerald-100);
+  color: var(--emerald-700);
+}
 
 .check-done {
   font-size: 0.75rem;
@@ -2538,7 +2620,8 @@ ul, ol {
   }
 
   .mockup-activity-rail {
-    display: none; /* Hide dense activity feed on medium screens to keep mockup clear */
+    display: none;
+    /* Hide dense activity feed on medium screens to keep mockup clear */
   }
 
   .pricing-grid {
@@ -2587,7 +2670,8 @@ ul, ol {
   }
 
   .header-actions .btn {
-    display: none; /* Desktop action buttons hide in favor of mobile drawer actions */
+    display: none;
+    /* Desktop action buttons hide in favor of mobile drawer actions */
   }
 
   .main-nav {
@@ -2677,7 +2761,8 @@ ul, ol {
   }
 
   .mockup-sidebar {
-    display: none; /* Keep primary canvas focused on mobile */
+    display: none;
+    /* Keep primary canvas focused on mobile */
   }
 
   .mockup-kpis {
@@ -2771,7 +2856,8 @@ ul, ol {
   }
 
   .top-announcement {
-    display: none; /* Hide announcement on very narrow screens for cleaner hero */
+    display: none;
+    /* Hide announcement on very narrow screens for cleaner hero */
   }
 
   .brand-name {
@@ -2845,7 +2931,10 @@ ul, ol {
 
 /* --- Accessibility: Reduced Motion Support --- */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
